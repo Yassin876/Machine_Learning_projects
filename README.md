@@ -58,6 +58,15 @@ This repository contains several machine learning projects, each focused on a di
   - `preprocessing_data.csv`: Preprocessed data for the model.
   - `RSMovie.ipynb`: Jupyter notebook for data analysis and model development.
 
+## 6. Sentiment Analysis for Mental Health
+
+- **Description:**
+   * A machine learning model to classify mental health status from text.
+   * Detects Depression, Stress, and Normal states from social media expressions.
+- **Key Files:**
+   * `app.py`: Main application code.
+   * `Sentiment_Analysis_for_Mental_Health.ipynb`: Jupyter notebook for data analysis and modeling.
+   * `models/`: Saved model, TF-IDF vectorizer, and label encoder.
 ---
 
 Each project includes code, datasets, and notebooks for experimentation and analysis. You can explore each folder for more details and to run the applications or notebooks.
