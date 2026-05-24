@@ -69,4 +69,20 @@ This repository contains several machine learning projects, each focused on a di
    * `models/`: Saved model, TF-IDF vectorizer, and label encoder.
 ---
 
+## 7. Sentiment Analysis for Mental Health updated
+
+- **Description:**
+  * A classical machine learning system that classifies text statements 
+  into five mental health conditions: Anxiety, Depression, Normal, 
+  Stress, and Suicidal.
+  
+  * The pipeline includes text preprocessing (lemmatization, TF-IDF), 
+  data augmentation via synonym replacement to handle class imbalance, 
+  and hyperparameter tuning using RandomizedSearchCV with StratifiedKFold. 
+  Four models were evaluated; Random Forest achieved the best performance 
+  (77.96% accuracy, Macro F1: 0.80) and is deployed via a Streamlit web app.
+- **Key Files:**
+   * `app.py`: Main application code.
+   * `Sentiment_Analysis_for_Mental_Health.ipynb`: Jupyter notebook for data analysis and modeling.
+
 Each project includes code, datasets, and notebooks for experimentation and analysis. You can explore each folder for more details and to run the applications or notebooks.
