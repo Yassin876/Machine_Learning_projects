@@ -30,7 +30,7 @@ The dataset initially suffered from a severe imbalance between classes like **St
 Below are the results evaluated on the final test set (total support: **7976**).
 
 ### Model Accuracy Summary
-*   **Random Forest**: 77.96% (Best Overall)
+*   **Random Forest**: 77.96% **(Best Overall — Used in Production)**
 *   **Linear SVC**: 77.13%
 *   **Logistic Regression**: 76.18%
 *   **XGBoost**: 76.71% (CPU Training)
@@ -78,6 +78,34 @@ Below are the results evaluated on the final test set (total support: **7976**).
 | **3: Stress** | 0.92 | 0.49 | 0.64 | 1009 |
 | **4: Suicidal** | 0.71 | 0.80 | 0.75 | 1998 |
 
+## Datasets
+
+### Primary Dataset
+The main training dataset used in this project is sourced from Kaggle:
+
+**[Sentiment Analysis for Mental Health](https://www.kaggle.com/datasets/suchintikasarkar/sentiment-analysis-for-mental-health)**
+
+The original dataset file is also available directly via Google Drive:
+
+**[Download Original Dataset](https://drive.google.com/file/d/1jwK34dhkgB9qO4o_568m79jKgKmsG4ty/view?usp=sharing)**
+
+### Augmented Dataset
+An additional dataset was merged with the original to address class imbalance (particularly for the **Stress** class), increasing overall sample counts and improving model generalization.
+
+## Trained Models
+
+All trained model files (`.pkl`) are available for download from Google Drive:
+
+**[Download All Models](https://drive.google.com/file/d/1uVNSDYRRZtS_10AIwc4aQUvPic0UtMHV/view?usp=sharing)**
+
+The archive includes:
+*   `best_Random_Forest.pkl` — Primary production model (best accuracy: **77.96%**)
+*   `label_encoder.pkl` — Label mapping (0–4 to class names)
+*   `other_models/` — XGBoost, Logistic Regression, and Linear SVC weights
+
+> [!NOTE]
+> The **Random Forest** model is the recommended model for production use. It achieves the highest overall accuracy and the best balance of precision and recall across all five classes.
+
 ## Project Structure
 ```text
 ├── app.py                            # Streamlit web application
@@ -90,6 +118,13 @@ Below are the results evaluated on the final test set (total support: **7976**).
 ```
 
 ## Demo
+
+### Video Demo
+A live demonstration of the application in action is available on Google Drive:
+
+**[Watch Demo Video](https://drive.google.com/file/d/1JIrlMyw_MzJwaZs2lSErvpGVID9eMzfF/view?usp=drive_link)**
+
+### Run Locally
 The project includes a Streamlit web interface.
 1.  Install dependencies: `pip install -r requirements.txt`
 2.  Run the app:
