@@ -96,7 +96,7 @@ An additional dataset was merged with the original to address class imbalance (p
 
 All trained model files (`.pkl`) are available for download from Google Drive:
 
-**[Download All Models](https://drive.google.com/file/d/1uVNSDYRRZtS_10AIwc4aQUvPic0UtMHV/view?usp=sharing)**
+**[Download All Models](https://drive.google.com/file/d/1sbcgoQyGFcws1be0lImgyFAldmH-mL89/view?usp=sharing)**
 
 The archive includes:
 *   `best_Random_Forest.pkl` — Primary production model (best accuracy: **77.96%**)
