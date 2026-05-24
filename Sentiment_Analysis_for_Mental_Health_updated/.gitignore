@@ -67,3 +67,10 @@ wandb/
 # OS
 .DS_Store
 Thumbs.db
+
+
+# Videos
+*.mp4
+*.avi
+*.mov
+*.mkv
