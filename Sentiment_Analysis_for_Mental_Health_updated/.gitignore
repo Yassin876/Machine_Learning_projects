@@ -4,16 +4,12 @@ __pycache__/
 *$py.class
 *.so
 .Python
-env/
-venv/
-ENV/
 build/
 develop-eggs/
 dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -26,19 +22,48 @@ wheels/
 # Virtual Environment
 env/
 venv/
-.env
+ENV/
 
-# Models (Large binary files)
+# Environment Variables
+.env
+.env.local
+
+# Models & Large Files ← زود الامتدادات دي
 *.pkl
 *.model
 *.bin
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.onnx
+*.pb
+*.weights
+*.dll        ← المشكلة اللي حصلت معاك
+*.safetensors
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints
+# Data Files ← مهم جداً
+*.csv
+*.tsv
+*.parquet
+*.feather
+data/
+datasets/
+raw_data/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb output  
+
+# MLflow / Experiments
+mlruns/
+outputs/
+logs/
+wandb/
 
 # VS Code
 .vscode/
 
-# OS files
+# OS
 .DS_Store
 Thumbs.db
